@@ -45,3 +45,34 @@ A full-stack mini social feed application where users can sign up, log in, creat
 
 ## 📂 Project Structure
 
+root/
+├── frontend/
+└── backend/
+
+## Backend Setup
+
+1) cd backend
+2) npm install
+3) create file- .emv
+4)Add this to .env -
+  PORT=5000
+  MONGO_URI=your_mongodb_atlas_connection_string
+  JWT_SECRET=your_secret_key
+5) start backend - npm start
+
+## Frontend Setup
+1) cd frontend
+2) npm install
+3) npm start
+
+## API Endpoints (Backend)
+1) Auth-
+POST /auth/signup → Signup
+POST /auth/login → Login
+
+2) Posts-
+GET /posts → Get all posts
+POST /posts → Create post (Protected)
+PUT /posts/:id/like → Like/Unlike (Protected)
+POST /posts/:id/comment → Add comment (Protected)
+
